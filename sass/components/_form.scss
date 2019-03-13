@@ -1,0 +1,21 @@
+.form {
+    background-color: $color-dark-green;
+    display: flex;
+    flex-direction: column;
+    &__input {
+        height: 4rem;
+        width: 100%;
+        padding: 0 1rem;
+        border: none;
+        margin: 1.5rem 0;
+    }
+    &__textarea {
+        resize: none;
+        padding: 1rem;
+    }
+    &__submit {
+        width: 50%;
+        cursor: pointer;
+        margin-top: 1.5rem;
+    }
+}
