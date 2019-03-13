@@ -1,0 +1,15 @@
+.newsletter {
+    background-color: $color-dark-green;
+    height: 400px;
+    width: 310px;
+    margin: 0 .5rem;
+    padding: 3rem;
+    color: $color-light-text;
+    
+    &__title {
+        color: $color-light-text;
+    }
+    .form__submit {
+        margin-top: 3rem;
+    }
+}
