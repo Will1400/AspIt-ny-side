@@ -1,0 +1,32 @@
+.article {
+    width: 270px;
+    height: 550px;
+    margin: .5rem;
+    border: 1px solid $color-gray;
+    &__img {
+        height: 400px;
+        width: 100%;
+        object-fit: cover;
+    }
+    &__title {
+        color: $color-dark-green;
+    }
+    &--wide {
+        width: 330px;
+        height: 400px;
+        .article__img {
+            height: 300px;
+        }
+    }
+    &__social {
+        background-color: $color-dark-green;
+        padding: 3rem;
+        display: flex;
+        align-items: center;
+        height: 145px;
+        margin: .5rem;
+        a {
+            margin: 0 1rem;
+        }
+    }
+}
