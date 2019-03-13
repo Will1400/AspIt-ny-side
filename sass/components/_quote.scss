@@ -1,0 +1,23 @@
+.quote {
+    background-color: $color-dark-green;
+    height: 350px;
+    color: $color-white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__text {
+        padding: 0 2rem;
+        width: 50%;
+        text-align: end;
+    }
+    &__content {
+
+    }
+    &__img {
+        border-radius: 50%;
+    }
+    &__footer {
+        color: $color-gray;
+        padding: 2rem 0;
+    }
+}
