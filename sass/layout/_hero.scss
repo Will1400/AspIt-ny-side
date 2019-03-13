@@ -15,5 +15,8 @@
     &__content {
         @include absCenter;
     }
+    &__text {
+        margin-bottom: 3.4rem;
+    }
     
 }
