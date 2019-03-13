@@ -6,4 +6,11 @@
     &__wrapper {
         display: flex;
     }
+    &__more-news-box {
+        position: relative;
+        height: 150px;
+    }
+    &__more-news {
+        @include absCenter;
+    }
 }
