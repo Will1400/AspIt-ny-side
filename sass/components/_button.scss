@@ -14,4 +14,16 @@
             box-shadow: 2px 2px 2rem rgba($color-black, .7);
         }
     }
+    &--min {
+        border-bottom: 1px solid $color-light-green;
+        padding: 1rem 0;
+        transition: all .3s;
+        &:hover {
+            background-color: $color-light-green;
+            color: white;
+            padding: 1rem 5px;
+            box-shadow: 2px 2px 1rem rgba($color-black, .7);
+            
+        }
+    }
 }
