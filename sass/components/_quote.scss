@@ -18,3 +18,23 @@
         padding: 2rem 0;
     }
 }
+
+@media only screen and(max-width: 1030px) {
+    .quote {
+        &__text {
+            width: 80%;
+        }
+    }
+}
+
+@media only screen and(max-width: 800px) {
+    .quote {
+        padding: 2rem 0;
+        flex-direction: column-reverse;
+        &__text {
+            display: flex;
+            flex-direction: column-reverse;
+            text-align: center;
+        }
+    }
+}
