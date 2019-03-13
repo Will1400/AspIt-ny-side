@@ -1,0 +1,17 @@
+.button {
+    font-size: 1.6rem;
+    color: $color-black;
+    text-decoration: none;
+    border: none;
+    padding: 2rem 3.4rem;
+    &--green {
+        background-color: $color-light-green;
+        color: $color-white;
+        transition: all .3s;
+        &:hover {
+            background-color: $color-white;
+            color: $color-light-green;
+            box-shadow: 2px 2px 2rem rgba($color-black, .7);
+        }
+    }
+}
