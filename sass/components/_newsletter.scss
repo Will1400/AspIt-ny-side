@@ -13,3 +13,10 @@
         margin-top: 3rem;
     }
 }
+
+@media only screen and(max-width: 1400px) {
+    .newsletter {
+        width: 100%;
+        margin: .5rem 0;
+    }
+}

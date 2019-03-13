@@ -30,3 +30,49 @@
         }
     }
 }
+
+@media only screen and(max-width: 1400px) {
+    .article {
+        width: 30%;
+        &--double {
+            width: 30%;
+            margin: 0 .5rem;
+        }
+        &--wide {
+            width: 100%;
+            margin: .5rem 0;
+            &__img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+        &__social {
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and(max-width: 900px) {
+    .article {
+        width: 48%;
+        &--double {
+            width: 48%;
+        }
+        &--wide {
+            width: 100%;
+        }
+    }
+}
+@media only screen and(max-width: 670px) {
+    .article {
+        border: none;
+        width: 100%;
+        &--double {
+            width: 100%;
+        }
+        &--double:last-child {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+    }
+}
