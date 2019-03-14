@@ -4,6 +4,7 @@
     text-decoration: none;
     border: none;
     padding: 2rem 3.4rem;
+    -webkit-appearance: none;
     &--green {
         background-color: $color-light-green;
         color: $color-white;
