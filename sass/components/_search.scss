@@ -9,7 +9,8 @@
             transition: all .5s;
         }
     }
-            &:hover img{
+            &:hover img,
+            &:focus img{
                 transform: rotate(45deg);
             }
     &__input {
