@@ -8,7 +8,8 @@
         background-color: $color-light-green;
         color: $color-white;
         transition: all .3s;
-        &:hover {
+        &:hover,
+        &:focus {
             background-color: $color-white;
             color: $color-light-green;
             box-shadow: 2px 2px 2rem rgba($color-black, .7);
@@ -18,7 +19,8 @@
         border-bottom: 1px solid $color-light-green;
         padding: 1rem 0;
         transition: all .3s;
-        &:hover {
+        &:hover,
+        &:focus {
             background-color: $color-light-green;
             color: white;
             padding: 1rem 5px;
