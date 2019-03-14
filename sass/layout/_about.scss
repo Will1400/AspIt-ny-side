@@ -41,7 +41,7 @@
         .post {
             padding: 2rem 0;
             width: 100%;
-            & :not(.post__img) {
+            & :not(.post__img .post__button) {
                 padding: 1rem
             }
         }
