@@ -237,6 +237,35 @@ p {
   .gallery__img {
     width: 100%; } }
 
+.search {
+  display: flex;
+  align-items: center; }
+  .search__checkbox {
+    display: none; }
+  .search__icon img {
+    transition: all .5s; }
+  .search:hover img {
+    transform: rotate(45deg); }
+  .search__input {
+    width: 0px;
+    height: 0px;
+    border: none;
+    transition: all .2s linear; }
+  .search__checkbox:checked ~ .search__input {
+    width: 100px;
+    height: 20px; }
+  .search__checkbox:checked ~ .search__icon img {
+    transform: rotate(90deg); }
+
+@media only screen and (max-width: 750px) {
+  .search {
+    flex-direction: column-reverse; }
+    .search__checkbox:checked ~ .search__input {
+      width: 130px;
+      height: 30px; }
+    .search__checkbox:checked ~ .search__icon img {
+      transform: rotate(45deg); } }
+
 .header {
   position: absolute;
   z-index: 99;
