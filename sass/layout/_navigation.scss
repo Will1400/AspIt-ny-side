@@ -9,6 +9,12 @@
         align-items: center;
         justify-content: flex-end;
     }
+    &__search {
+        height: 40px;
+        width: 40px;
+        cursor: pointer;
+        margin: 0 2rem;
+    }
     &__link {
         text-decoration: none;
         color: $color-white;
@@ -18,6 +24,7 @@
         position: relative;
         white-space: nowrap;
         &::after {
+            // Hover underline
             content: "";
             height: 2px;
             width: 0;
@@ -31,12 +38,6 @@
         &:focus::after {
             width: 100%;
         }
-    }
-    &__search {
-        height: 40px;
-        width: 40px;
-        cursor: pointer;
-        margin: 0 2rem;
     }
 }
 
@@ -73,7 +74,7 @@
             padding: 1rem 2rem;
             margin: 2rem;
         }
-    } // burger menu functionality
+    }
     .burger {
         &__icon {
             position: absolute;
@@ -90,7 +91,7 @@
                 transition: all .4s;
             }
         }
-        &__checkbox:checked~.navigation {
+        &__checkbox:checked~.navigation { // burger menu functionality
             height: 100vh;
             visibility: visible;
             opacity: 1;

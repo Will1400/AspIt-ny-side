@@ -9,22 +9,22 @@
             transition: all .5s;
         }
     }
-            &:hover img,
-            &:focus img{
-                transform: rotate(45deg);
-            }
+    &:hover img,
+    &:focus img {
+        transform: rotate(45deg);
+    }
     &__input {
         width: 0px;
         height: 0px;
         border: none;
         transition: all .2s linear;
         border-radius: 0;
-    }
-    &__checkbox:checked ~ &__input {
+    } // Input functionality
+    &__checkbox:checked~&__input {
         width: 100px;
         height: 20px;
     }
-    &__checkbox:checked ~ &__icon img {
+    &__checkbox:checked~&__icon img {
         transform: rotate(90deg);
     }
 }
@@ -32,12 +32,13 @@
 @media only screen and(max-width:750px) {
     .search {
         flex-direction: column-reverse;
-        &__checkbox:checked ~ &__input {
+        &__checkbox:checked~&__input {
             width: 130px;
             height: 30px;
         }
-        &__checkbox:checked ~ &__icon img {
-            transform: rotate(45deg);
+        &__checkbox:checked~&__icon img {
+            margin-bottom: 1rem;
+            transform: rotate(45deg); // rotate to point the search field
         }
     }
 }
