@@ -36,7 +36,10 @@
 }
 
 @media only screen and(max-width:600px) {
-    .about .post {
-        width: 100%;
+    .about {
+        padding: 4rem 0;
+        .post {
+           width: 100%;
+       }
     }
 }
