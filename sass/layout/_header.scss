@@ -11,3 +11,12 @@
         }
     }
 }
+
+.header.no-js {
+    position: fixed;
+    background-color: rgba($color-black, .9);
+    height: 60px;
+    &__logo-box {
+        height: 60px;
+    }
+}
