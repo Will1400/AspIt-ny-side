@@ -2,9 +2,12 @@
     background-color: $color-dark-green;
     height: 350px;
     color: $color-white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
     &__text {
         padding: 0 2rem;
         width: 50%;
