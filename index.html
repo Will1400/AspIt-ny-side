@@ -10,7 +10,7 @@
 
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     <script>
-        ScrollReveal({reset: true});
+        ScrollReveal({ reset: true });
     </script>
 </head>
 
@@ -136,8 +136,17 @@
                     <h2 class="newsletter__title">Tilmeld nyhedsbrev</h2>
                     <p class="newsletter__text">Få nyheder fra AspIT dirikte i din inbakke</p>
                     <form action="" class="newsletter__form form">
-                        <input type="text" class="form__input" placeholder="Navn" required>
-                        <input type="email" class="form__input" placeholder="Email" required>
+
+                        <div class="form__input-wrapper">
+                            <input type="text" class="form__input" placeholder="Navn" name="Navn" required>
+                            <label class="form__label">Navn</label>
+                        </div>
+
+                        <div class="form__input-wrapper">
+                            <input type="email" class="form__input" placeholder="Email" name="Email" required>
+                            <label class="form__label">Email</label>
+                        </div>
+
                         <input type="submit" class="form__submit uppercase button button--green" value="tilmeld">
                     </form>
                 </div>
@@ -154,12 +163,21 @@
         <div class="contact__left">
             <h2 class="contact__title">Kontakt AspIT</h2>
             <p class="contact__text">Vælg en afdeling og send os en besked</p>
+
             <form action="" class="contact__form form">
+
                 <div class="form__inputs">
-                    <input type="text" class="form__input" placeholder="Navn" required>
-                    <input type="email" class="form__input" placeholder="Email" required>
+                    <div class="form__input-wrapper">
+                        <input type="text" class="form__input" placeholder="Navn" name="Navn" required>
+                        <label class="form__label">Navn</label>
+                    </div>
+                    <div class="form__input-wrapper">
+                        <input type="email" class="form__input" placeholder="Email" name="Email" required>
+                        <label class="form__label">Email</label>
+                    </div>
                 </div>
-                <textarea name="besked" placeholder="Besked" cols="30" rows="10" class="form__textarea" required></textarea>
+                <textarea name="besked" placeholder="Besked" cols="30" rows="10" class="form__textarea"
+                    required></textarea>
                 <input type="submit" class="form__submit uppercase button button--green" value="Send mail">
             </form>
         </div>

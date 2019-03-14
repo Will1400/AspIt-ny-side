@@ -35,13 +35,12 @@
         &__map {
             height: 650px;
         }
-
         .form {
             &__inputs {
                 display: flex;
                 justify-content: space-between;
             }
-            &__input {
+            &__input-wrapper {
                 width: 49%;
             }
             &__submit {
@@ -50,6 +49,7 @@
         }
     }
 }
+
 @media only screen and(max-width: 780px) {
     .contact {
         margin-bottom: 10rem;
@@ -58,20 +58,26 @@
         }
     }
 }
+
 @media only screen and(max-width: 540px) {
     .contact {
         margin-bottom: 0;
         &__map {
             height: 350px;
         }
-        .form__inputs {
-            flex-direction: column;
-        }
-        .form__input {
-            width: 100%;
-        }
-        .form__submit {
-            width: initial;
+        .form {
+            &__inputs {
+                flex-direction: column;
+            }
+            &__input-wrapper {
+                width: 100%;
+            }
+            &__input {
+                width: 100%;
+            }
+            &__submit {
+                width: initial;
+            }
         }
     }
 }
