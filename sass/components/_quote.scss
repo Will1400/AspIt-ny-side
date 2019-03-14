@@ -2,6 +2,7 @@
     background-color: $color-dark-green;
     height: 350px;
     color: $color-white;
+    overflow: hidden;
     &__wrapper {
         display: flex;
         justify-content: center;
