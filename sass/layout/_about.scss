@@ -39,7 +39,11 @@
     .about {
         padding: 4rem 0;
         .post {
-           width: 100%;
-       }
+            padding: 2rem 0;
+            width: 100%;
+            & :not(.post__img) {
+                padding: 1rem
+            }
+        }
     }
 }
