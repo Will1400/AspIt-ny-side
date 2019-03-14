@@ -3,6 +3,7 @@
     color: $color-light-text;
     display: flex;
     height: 100vh;
+    overflow: hidden;
     &__title {
         color: $color-light-text;
     }
