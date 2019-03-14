@@ -1,0 +1,41 @@
+.search {
+    display: flex;
+    align-items: center;
+    &__checkbox {
+        display: none;
+    }
+    &__icon {
+        img {
+            transition: all .5s;
+        }
+    }
+            &:hover img{
+                transform: rotate(45deg);
+            }
+    &__input {
+        width: 0px;
+        height: 0px;
+        border: none;
+        transition: all .2s linear;
+    }
+    &__checkbox:checked ~ &__input {
+        width: 100px;
+        height: 20px;
+    }
+    &__checkbox:checked ~ &__icon img {
+        transform: rotate(90deg);
+    }
+}
+
+@media only screen and(max-width:750px) {
+    .search {
+        flex-direction: column-reverse;
+        &__checkbox:checked ~ &__input {
+            width: 130px;
+            height: 30px;
+        }
+        &__checkbox:checked ~ &__icon img {
+            transform: rotate(45deg);
+        }
+    }
+}
