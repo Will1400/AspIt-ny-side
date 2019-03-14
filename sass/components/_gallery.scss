@@ -1,7 +1,6 @@
 .gallery {
     padding: 5rem 0;
     display: grid;
-    overflow: hidden;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: 200px 100px  200px;
     grid-gap: 10px;
@@ -55,5 +54,6 @@
 @media only screen and (max-width: 670px) {
     .gallery__img {
         width: 100%;
+        margin: .5rem 0;
     }
 }
