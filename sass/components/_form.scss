@@ -20,6 +20,20 @@
         cursor: pointer;
         margin-top: 1.5rem;
     }
+    &__input,
+    &__textarea {
+        transition: all .15s;
+        &:invalid {
+            box-shadow: 0 0 2px 1px  red;
+        }
+        &:valid {
+            box-shadow: 0 0 2px 1px $color-light-green;
+        }
+        &:focus {
+            box-shadow: none;
+            transform: scale(1.03);
+        }
+    }
 }
 
 @media only screen and(max-width:550px) {

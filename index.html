@@ -136,8 +136,8 @@
                     <h2 class="newsletter__title">Tilmeld nyhedsbrev</h2>
                     <p class="newsletter__text">Få nyheder fra AspIT dirikte i din inbakke</p>
                     <form action="" class="newsletter__form form">
-                        <input type="text" class="form__input" placeholder="Navn">
-                        <input type="email" class="form__input" placeholder="Email">
+                        <input type="text" class="form__input" placeholder="Navn" required>
+                        <input type="email" class="form__input" placeholder="Email" required>
                         <input type="submit" class="form__submit uppercase button button--green" value="tilmeld">
                     </form>
                 </div>
@@ -156,10 +156,10 @@
             <p class="contact__text">Vælg en afdeling og send os en besked</p>
             <form action="" class="contact__form form">
                 <div class="form__inputs">
-                    <input type="text" class="form__input" placeholder="Navn">
-                    <input type="email" class="form__input" placeholder="Email">
+                    <input type="text" class="form__input" placeholder="Navn" required>
+                    <input type="email" class="form__input" placeholder="Email" required>
                 </div>
-                <textarea name="besked" placeholder="Besked" cols="30" rows="10" class="form__textarea"></textarea>
+                <textarea name="besked" placeholder="Besked" cols="30" rows="10" class="form__textarea" required></textarea>
                 <input type="submit" class="form__submit uppercase button button--green" value="Send mail">
             </form>
         </div>
@@ -215,7 +215,7 @@
         });
     </script>
 
-    <!-- Fixed header scripts -->
+    <!-- Fixed header script -->
     <script>
         const header = document.getElementsByClassName("header")[0];
         header.classList.remove("no-js");
