@@ -10,8 +10,15 @@
             height: 100%;
         }
     }
+    &--fixed {
+        position: fixed;
+        height: 60px;
+        transition: all .5s;
+        background-color: rgba($color-black, .9);
+    }
 }
 
+// If js is not enabled
 .header.no-js {
     position: fixed;
     background-color: rgba($color-black, .9);
