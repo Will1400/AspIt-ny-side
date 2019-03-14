@@ -41,8 +41,12 @@
         .post {
             padding: 2rem 0;
             width: 100%;
-            & :not(.post__img .post__button) {
-                padding: 1rem
+            &__title,
+            &__content {
+                padding: 0 1rem;
+            }
+            .button {
+                margin: 0 1rem;
             }
         }
     }
