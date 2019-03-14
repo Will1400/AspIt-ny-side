@@ -6,8 +6,10 @@
     display: flex;
     padding: 1rem 3rem;
     &__logo-box {
+        width: 73px;
         img {
             height: 100%;
+            width: 100%;
         }
     }
     &--fixed {
