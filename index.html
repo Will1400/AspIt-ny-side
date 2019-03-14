@@ -7,6 +7,11 @@
     <title>AspIt</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script>
+        ScrollReveal({reset: true});
+    </script>
 </head>
 
 <body>
@@ -81,13 +86,16 @@
     </section>
 
     <section class="quote">
-        <div class="quote__text">
-            <p class="quote__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe placeat dolor
-                expedita rem, impedit, necessitatibus laboriosam delectus error corporis in consectetur explicabo? Eos
-                molestiae nisi soluta facere.</p>
-            <footer class="quote__footer">Ole Bay Jensen. Uddannelseschef</footer>
+        <div class="quote__wrapper">
+            <div class="quote__text">
+                <p class="quote__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe placeat dolor
+                    expedita rem, impedit, necessitatibus laboriosam delectus error corporis in consectetur explicabo?
+                    Eos
+                    molestiae nisi soluta facere.</p>
+                <footer class="quote__footer">Ole Bay Jensen. Uddannelseschef</footer>
+            </div>
+            <img src="img/ole_bay_jensen.jpg" alt="Ole Bay Jensen" class="quote__img">
         </div>
-        <img src="img/ole_bay_jensen.jpg" alt="Ole Bay Jensen" class="quote__img">
     </section>
 
     <section class="news">
@@ -176,7 +184,38 @@
         <p class="footer__copyright">copyright 2018 - ligebanan</p>
     </footer>
 
+    <!-- ScrollReveal script -->
+    <script>
+        // Quote reveal
+        ScrollReveal().reveal('.quote__wrapper', {
+            distance: "300px",
+            origin: "right",
+        });
 
+        // Newsletter reveal
+        ScrollReveal().reveal('.newsletter', {
+            distance: "100px",
+            origin: "bottom",
+            duration: 800,
+        });
+
+        // Contact reveal
+        ScrollReveal().reveal('.contact__left', {
+            distance: "100px",
+            origin: "left",
+        })
+        ScrollReveal().reveal('.contact__right', {
+            distance: "50px",
+            origin: "right",
+        })
+
+        // Gallery reveal
+        ScrollReveal().reveal('.gallery__img', {
+            interval: 64,
+        });
+    </script>
+
+    <!-- Fixed header scripts -->
     <script>
         const header = document.getElementsByClassName("header")[0];
         header.classList.remove("no-js");
