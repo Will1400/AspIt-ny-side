@@ -275,6 +275,18 @@ p {
   padding: 1rem 3rem; }
   .header__logo-box img {
     height: 100%; }
+  .header--fixed {
+    position: fixed;
+    height: 60px;
+    transition: all .5s;
+    background-color: rgba(0, 0, 0, 0.9); }
+
+.header.no-js {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.9);
+  height: 60px; }
+  .header.no-js__logo-box {
+    height: 60px; }
 
 .navigation {
   height: 100%;
