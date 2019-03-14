@@ -152,7 +152,8 @@ p {
         height: 100%;
         width: 100%; }
     .article__social {
-      width: 100%; } }
+      width: 100%;
+      margin: 0; } }
 
 @media only screen and (max-width: 900px) {
   .article {
@@ -180,7 +181,7 @@ p {
   background-color: #0f7d3f;
   height: 400px;
   width: 310px;
-  margin: 0 .5rem;
+  margin: .5rem .5rem;
   padding: 3rem;
   color: #f9f7f6; }
   .newsletter__title {
@@ -281,19 +282,56 @@ p {
     cursor: pointer;
     margin: 0 2rem; }
 
+.burger__checkbox, .burger__icon {
+  display: none; }
+
 @media only screen and (max-width: 750px) {
   .navigation {
+    visibility: hidden;
+    opacity: 0;
     position: fixed;
     top: 0;
+    left: 0;
     padding: 2rem;
-    height: 100vh;
-    width: 100%;
-    background-color: #0f7d3f; }
+    height: 0;
+    background-color: #0f7d3f;
+    overflow: hidden;
+    transition: all .5s; }
     .navigation__list {
       flex-direction: column;
       height: 100%;
-      justify-content: center;
-      align-items: center; } }
+      justify-content: center; }
+    .navigation__item {
+      margin: 3rem; }
+    .navigation__link {
+      width: 100%;
+      padding: 1rem 2rem;
+      margin: 2rem; }
+  .burger__icon {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    display: inline-block;
+    cursor: pointer;
+    z-index: 99; }
+    .burger__icon--bar {
+      background-color: #fff;
+      height: 2px;
+      width: 30px;
+      margin: 6px 0;
+      transition: all .4s; }
+  .burger__checkbox:checked ~ .navigation {
+    height: 100vh;
+    visibility: visible;
+    opacity: 1; }
+  .burger__checkbox:checked ~ .burger__icon {
+    position: fixed; }
+    .burger__checkbox:checked ~ .burger__icon .burger__icon--bar:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 4px); }
+    .burger__checkbox:checked ~ .burger__icon .burger__icon--bar:nth-child(2) {
+      opacity: 0; }
+    .burger__checkbox:checked ~ .burger__icon .burger__icon--bar:nth-child(3) {
+      transform: rotate(-45deg) translate(7px, -6px); } }
 
 .hero {
   height: 100vh;
