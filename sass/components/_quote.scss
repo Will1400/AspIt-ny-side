@@ -33,6 +33,7 @@
 
 @media only screen and(max-width: 800px) {
     .quote {
+        height: 400px;
         padding: 2rem 0;
         &__wrapper {
             flex-direction: column-reverse;
